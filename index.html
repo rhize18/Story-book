@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title> Storybook: HOME </title>
+</head>
+<body> 
+
+	<!-- LOGO -->
+	<header>
+		<a href="index.html"> <img src="images/storylogo.png" alt="logo"> </a>
+
+
+	<!-- NAVIGATIONS -->
+<hr>
+	<nav>		
+		<ul class="nav-menu">
+			<li><a href="index.html" target:"_parent">HOME</a></li>
+			<li><a href="about.html" target:"_parent">ABOUT US</a></li>
+			<li><a href="plans.html" target:"_parent">PLANS</a></li>
+			<li><a href="portal.html" target:"_parent">PARENT PORTAL</a></li>
+			<li class="login"><a href="login.html" target:"_parent">LOG-IN</a></li> 
+			<li><a href="register.html" target:"_blank">REGISTER</a></li>
+		</ul>
+
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
+	</header>
+	
+<hr>
+
+	<!-- SECTION 1 - HEADING/HERO IMAGE -->
+	<section class="wrapper"> 
+		<img class="heroimg" src="images/heroimg.png"/>
+		<div>
+			<div class="topheading">
+				<h1> BIGGEST COLLECTION OF FAIRY TALES, BEDTIME STORIES, NURSERY RYHMES, SHORT STORIES AND MORE! </h1>
+				<p> Free 5-10 minutes Bedtime Stories</p>
+				<a class="button" href="#"> START READING </a> 
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<!-- SECTION 2 - COLLECTIONS -->
+	<section class="wrapper">
+	<div class="collection">
+			<h1>NEW COLLECTIONS</h1>
+					<p>Engaging stories that your family will love!</p>
+					<p>Find these stories that will encourage lifelong love of reading and learning</p>
+	
+		<div class="book">	
+			<img class="book1" src="images/book2.png" alt="book2"/>
+			<img class="book2" src="images/book1.png" alt="book1/">
+			<img class="book3" src="images/book3.png" alt="book3/">
+		</div>
+		<div class="learn">
+			<a class="button" href="#"> LEARN MORE </a> 
+		</div>
+	</div>
+		</section>
+
+	<!-- SECTION 3 - PLAN HEADING-->
+	<section class="wrapper">
+	<div class="plan-heading">
+		<img src="images/kids1.png"/>
+		<h1> ENJOY 50,000+ STORIES <br>WITH THE PERFECT PLAN <br>THAT FIT YOUR NEEDS. </br></h1>
+		<img src="images/kids2.png"/>
+	</div>
+</section>
+
+	<!-- SECTION 4 - PLAN OPTIONS-->
+	<section class="plan">
+		<div class="basic">
+		<h2> BASIC </h2>
+		<h1> FREE </h1>
+		<p> Access 1 book per day </p>
+		<div class="button-2">
+			<a href=""> GET BASIC </a>
+		</div>
+			<div class="learn-link">
+		   		<a href="">Learn More </a></li>
+			</div>
+		</div>
+
+<div>
+	<div class="save"> Save 20% </div>
+		<div class="annual">
+		<h2> UNLIMITED </h2>
+		<h1> PHP250/mo. </h1>
+		<p> PHP2,400 Billed Annually </p>
+		<div class="button-2">
+			<a href=""> GET ANNUAL </a>
+		</div>
+	
+			<div class="learn-link">
+		   		<a href="">Learn More </a></li>
+			</div>
+		</div>
+</div>
+
+		<div class="unli">
+		<h2> UNLIMITED </h2>
+		<h1> PHP300/mo. </h1>
+		<p> Billed Monthly </p>
+		<div class="button-2">
+			<a href=""> GET MONTHLY </a>
+		</div>
+			<div class="learn-link">
+				<a href="">Learn More </a>
+			</div>
+			</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+	<section class="footer-wrap">
+		<section class="subscribe">
+		<img src="images/storylogo.png"/>
+		<h1> SUBSCRIBE TO OUR NEWSLETTER </h1>
+		<p> Receive updates instantly </p>
+
+		<div class="input">
+		<input type="text" placeholder="example@gmail.com"> <a href=""> SUBSCRIBE </a></input>
+	</div>
+	</section>
+
+	<section class="info">
+		<p> More Information </p>
+			<ul>
+				<li> <a href="about.html"> About Us </a></li>
+				<li> <a href="#">Help and Support </a></li>
+				<li> <a href="#">Terms and Conditions </a></li>
+				<li> <a href="#">Privacy Policy </a></li>
+			</ul>
+	</section>
+
+	<section class="contact">
+		<p> Contact Information </p>
+		<ul>
+		<li> Email: example@gmail.com </li>
+		<li> Tel.#: 1234567</li>
+		<br><li> Location: Manila, Philippines </li></br>
+	</ul>
+	</section>
+</section>
+
+	<section class="copywrite">
+		<p> (c) Storybook2021. All rights reserved. </p>
+	</section>
+</footer>
+
+
+<script type="text/javascript">
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-menu");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
+</body>
+</html>

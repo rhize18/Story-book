@@ -1,0 +1,123 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="images/logo.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial scale=1">
+	<title> Storybook: HOME </title>
+</head>
+<body> 
+
+		<!-- LOGO -->
+	<header>
+		<a href="index.html"> <img src="images/storylogo.png" alt="logo"> </a>
+
+
+	<!-- NAVIGATIONS -->
+<hr>
+	<nav>		
+		<ul class="nav-menu">
+			<li><a href="index.html" target:"_parent">HOME</a></li>
+			<li><a href="about.html" target:"_parent">ABOUT US</a></li>
+			<li><a href="plans.html" target:"_parent">PLANS</a></li>
+			<li><a href="portal.html" target:"_parent">PARENT PORTAL</a></li>
+			<li class="login"><a href="login.html" target:"_parent">LOG-IN</a></li> 
+			<li><a href="register.html" target:"_blank">REGISTER</a></li>
+		</ul>
+
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</div>
+	</nav>
+	</header>
+	<hr>
+				
+<section> 
+		<h1 class="portal-title"> PARENTS GUIDE </h1>
+			<div class="portal-container">
+				<div>
+					<img src="images/storytell.jpg"/>
+						<h2> The power of Story telling in education </h2>
+						<p>People around the world have always told stories as a way of passing down of their cultural beliefs, traditions and history to future generation.</p>
+					<a href="https://www.erasmuspluscourses.com/blog/the-power-of-storytelling-in-the-classroom"> read more </a>
+				</div>
+			<div>
+				<img src="images/bully.jfif"/>
+					<h2> How to Talk to your kids about bullying </h2>
+					<p>While more than one in four children say they have experienced being bullied, only 20-30 percent of those children ever report it to an adult. </p>
+				<a href="https://abc7ny.com/how-to-talk-your-kids-about-bullying-prevention-parenting-tips/959887/"> read more </a>
+			</div>
+			
+			<div>
+				<img src="images/read.jfif"/>
+					<h2> Nurturing Children to become lifelong readers </h2>
+					<p>Half of all American adults admit to never having read a single book since graduation from high school and most of the rest admit to reading only one book a year. </p>
+				<a href="https://www.harpercollins.com/blogs/harperkids/how-to-raise-a-lifelong-reader"> read more </a>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+	<section class="footer-wrap">
+		<section class="subscribe">
+		<img src="images/storylogo.png"/>
+		<h1> SUBSCRIBE TO OUR NEWSLETTER </h1>
+		<p> Receive updates instantly </p>
+
+		<div class="input">
+		<input type="text" placeholder="example@gmail.com"> <a href=""> SUBSCRIBE </a></input>
+	</div>
+	</section>
+
+	<section class="info">
+		<p> More Information </p>
+			<ul>
+				<li> About Us </li>
+				<li> Help and Support </li>
+				<li> Terms and Conditions </li>
+				<li> Privacy Policy </li>
+			</ul>
+	</section>
+
+	<section class="contact">
+		<p> Contact Information </p>
+		<ul>
+		<li> Email: example@gmail.com </li>
+		<li> Tel.#: 1234567</li>
+		<br><li> Location: Manila, Philippines </li></br>
+	</ul>
+	</section>
+</section>
+
+	<section class="copywrite">
+		<p> (c) Storybook2021. All rights reserved. </p>
+	</section>
+</footer>
+
+<script type="text/javascript">
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
+
+</body>
+</html>
